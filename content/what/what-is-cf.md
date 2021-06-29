@@ -9,7 +9,7 @@ Cloud Foundry is an open-source project, guided by its contributors, governed by
 
 ## The Cloud Foundry Way
 
-_The Cloud Foundry Way_ focuses on cross-team efficiency through well-established cloud-native opinions and extremely high levels of automation. To understand what this really means, it is helpful to ask the question: _"why does your custom development organization exist?"_
+_The Cloud Foundry Way_ focuses on cross-team efficiency through well-established cloud-native opinions and extremely high levels of automation. To understand what this really means, it is helpful to ask the question: _"why does your software development organization exist?"_
 
 If you have a custom development shop, it is likely to build apps that drive your business.  In order to be successful, you need to move quickly, in a lean fashion, on a tight budget, while maintaining good security posture and presence.  So what do you need to achieve this?
 
