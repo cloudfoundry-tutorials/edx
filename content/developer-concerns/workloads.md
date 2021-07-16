@@ -1,6 +1,6 @@
 ---
 title: "Types of Workloads"
-weight: "1"
+weight: "2"
 ---
 
 As we mentioned previously, Cloud Foundry is not a generalized compute platform. It is therefore important to understand the types of workloads Cloud Foundry can support. Cloud Foundry supports both short running and long running processes in containers. A short running process is called a 'task'. A long running process is called an 'application'.

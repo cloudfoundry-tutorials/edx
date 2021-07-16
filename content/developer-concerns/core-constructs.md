@@ -1,6 +1,6 @@
 ---
 title: "Core Constructs"
-weight: "0"
+weight: "1"
 ---
 
 Cloud Foundry is a multi-tenant platform designed to support multiple teams or customers with the necessary segregation of tenants. In this section, we take a quick look at the constructs that make this possible.
