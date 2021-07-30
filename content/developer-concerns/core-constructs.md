@@ -3,13 +3,17 @@ title: "Core Constructs"
 weight: "1"
 ---
 
-Cloud Foundry is a multi-tenant platform designed to support multiple teams or customers with the necessary segregation of tenants. In this section, we take a quick look at the constructs that make this possible.
+Cloud Foundry is a multi-tenant platform designed to support multiple teams or customers with the necessary separation of tenants. In this section, we take a quick look at the constructs that make this possible.
 
 ## Organizations and Spaces
 
 Organizations (orgs) and spaces are logical separations within a Cloud Foundry instance. Spaces live within orgs, and a single org can contain one or more spaces.
 
-Typically orgs separate tenants or projects. So, for example, an org could exist for each project or each tenant. Each org might then have separate spaces for different lifecycle stages, like development, staging, and production.
+Typically orgs separate tenants or projects. So, for example, an org could exist for each project or each tenant. Each org might then have separate spaces for different lifecycle stages, like development, staging, and production. Workloads (applications) are always deployed to a space.
+
+### Placement Pools
+
+As stated above, organizations and spaces are logical seperations. This means that workloads share the underlying infrastructure, with appropriate software defined separations (including containers, networks, etc). An optional feature called placement pools can be used to create a separation in the underlying virtual machines assigned to an organization. This optional feature is not available in deployments on Kubernetes.
 
 ## Role-Based Access Control
 
@@ -43,11 +47,10 @@ Quotas are named sets of memory, service, and instance usage limits. Quotas appl
 
 Typically, Cloud Foundry operators will establish quotas for orgs, and OrgManagers will establish quotas for spaces. After all, resource planning is a collaborative effort.
 
-## Impact
-
-The constructs in this chapter lay the foundation for a secure, multi-tenant platform that enables users to be self-sufficient. Security, compliance, and operations teams work together to define the guard rails in the platform while freeing developers to work unimpeded within those confines.
+## Constructs as Code
 
 Compliance requirements often dictate regular audits of environments. The above constructs are easily managed using [Terraform](https://www.terraform.io/) and the [Cloud Foundry Terraform Provider](https://registry.terraform.io/providers/cloudfoundry-community/cloudfoundry/latest), enabling automated auditing and enforcement across all organizations. 
 
+## Impact
 
-
+The constructs in this chapter lay the foundation for a secure, multi-tenant platform that enables users to be self-sufficient. Security, compliance, and operations teams work together to define the guard rails in the platform while freeing developers to work unimpeded within those confines. This enables technology organizations to operate efficiently, securely, and with unparalled speed.
