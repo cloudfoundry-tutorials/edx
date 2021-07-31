@@ -9,7 +9,9 @@ Cloud Foundry is a multi-tenant platform designed to support multiple teams or c
 
 Organizations (orgs) and spaces are logical separations within a Cloud Foundry instance. Spaces live within orgs, and a single org can contain one or more spaces.
 
-Typically orgs separate tenants or projects. So, for example, an org could exist for each project or each tenant. Each org might then have separate spaces for different lifecycle stages, like development, staging, and production. Workloads (applications) are always deployed to a space.
+Typically orgs separate tenants or projects. So, for example, an org could exist for each project or each tenant. Each org might tshen have separate spaces for different lifecycle stages, like development, staging, and production. Workloads (applications) are always deployed to a space.
+
+Selecting an org and space to work with is called "targeting" and is done with the `cf target` command. In the Katacoda tutorial, the user provisioned for you only had access to one org and space. Therefore, the target org and space were automatically set.s
 
 ### Placement Pools
 
