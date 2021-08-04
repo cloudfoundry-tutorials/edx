@@ -10,7 +10,11 @@ In this section, we look at the capabilities of Cloud Foundry from the perspecti
 
 - **Workloads**: Cloud Foundry is not a generalized compute platform. It is therefore important to understand the types of workloads Cloud Foundry can support. 
 
+- **Lifecycle Management**: Applications are not static resources as they will inevitably undergo changes and evolutions over their lifetime. In this chapter, we take a look at what can happen in the lifecycle of an application.
+
 - **Containerization**: Cloud Foundry runs workloads in containers. The platform supports bringing your containers or, more commonly, simply bringing your applications and allowing the platform to containerize them. In this chapter, we look at these two approaches. 
+
+
 
 - **Routing**: Cloud Foundry’s routing model provides developers with flexible capabilities to securely and efficiently route traffic to applications. In this chapter, we cover the platform capabilities for managing routes and domains.
 
@@ -18,4 +22,4 @@ In this section, we look at the capabilities of Cloud Foundry from the perspecti
 
 - **Visibility**: Cloud Foundry provides visibility into the lifecycle of applications. This visibility is quite helpful for development, troubleshooting, and security. 
 
-- **Lifecycle Management**: Applications are not static resources as they will inevitably undergo changes and evolutions over their lifetime. In this chapter, we take a look at what can happen in the lifecycle of an application.
+
