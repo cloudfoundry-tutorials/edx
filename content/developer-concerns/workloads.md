@@ -1,19 +1,27 @@
 ---
-title: "Types of Workloads"
+title: "Workload Basics"
 weight: "2"
 ---
 
-As we mentioned previously, Cloud Foundry is not a generalized compute platform. It is therefore important to understand the types of workloads Cloud Foundry can support. Cloud Foundry supports both short running and long running processes in containers. A short running process is called a 'task'. A long running process is called an 'application'.
+As we mentioned previously, Cloud Foundry is not a generalized computing platform but rather a platform for running custom applications. It is therefore essential to understand the types of workloads Cloud Foundry is designed to support.
 
-Cloud Foundry is optimized to run stateless applications. State should be stored in an attached service like a database or [volume](https://docs.cloudfoundry.org/devguide/services/using-vol-services.html) (for applications requiring persistent disk).  Cloud Foundry applications can optionally serve web (http/https) traffic. Applications that do not serve web traffic are referred to as "worker" applications.
+## Stateless Applications
+
+Cloud Foundry is optimized to run stateless applications. "Stateless" does not mean your application cannot store data or have any state. It simply means that the state should be stored in an external service like a database or attached [volume](https://docs.cloudfoundry.org/devguide/services/using-vol-services.html) rather than on a local disk. 
+
+This approach may sound familiar if you are aware of [12 Factor Application](https://12factor.net) best practices. For example, the [sixth factor](https://12factor.net/processes) regarding processes states: "Execute the app as one or more stateless processes."
+
+> 12 Factor App best practices were authored by experienced developers and practitioners to address systemic problems in modern application development. They attempt to define a common language to discuss the issues and offer a broad set of conceptual solutions. When evaluating platforms like Cloud Foundry, it is important to remember 12-factor app principles are recommendations, not requirements.
+
+There are many inherent benefits to a short-lived, ephemeral file system. Application instances can safely and quickly be added, removed, or replaced. As you saw in the Katacoda tutorial, this allows Cloud Foundry to quickly detect when instances have failed or crashed and replace them. It also ensures scaling up or down is simple and fast. Cloud Foundry can simply add or remove application instances at your direction or using the [autoscaler](https://github.com/cloudfoundry/app-autoscaler) service. This form of scaling is related to the [eighth factor](https://12factor.net/concurrency) regarding concurrency: "Scale out via the process model".
 
 ## Language Support
 
-Cloud Foundry allows developers to bring application code to the platform or to bring existing Docker images.
+Cloud Foundry allows developers to simply bring application code to the platform or to bring existing Docker images.
 
 ### Application Code
 
-When you bring your application code to Cloud Foundry, the will generate a container image for an application before executing each instance it in a container. Buildpacks are used to generate container images. We will discuss this process more in the next section. For now, it suffices to understand that Cloud Foundry can support languages for which a buildpack exists. This includes, but is not limited to, the following:
+When you bring your application code to Cloud Foundry, the platform will generate a container image for the application before executing instances in containers. Buildpacks are used to generate container images. We will discuss this process more in the next section. For now, it suffices to understand that Cloud Foundry can support languages for which a buildpack exists. This includes, but is not limited to, the following:
 
 - Compiled Binaries
 - Go
@@ -28,44 +36,22 @@ When you bring your application code to Cloud Foundry, the will generate a conta
 - Ruby
 - Staticfile
 
-There are many additional community created buildpacks as well.
+There are additional community-created buildpacks as well. For example, the Katacoda tutorial utilized the binary-buildpack to run the compiled application written in go-lang.
 
 ### Docker Images
 
-Cloud Foundry also supports running Docker images (provided this feature is enabled). Cloud Foundry will fetch the image from registry, like Dockerhub, before running each instance in a container. For details on Docker support in Cloud Foundry, refer to the [documentation](https://docs.cloudfoundry.org/devguide/deploy-apps/push-docker.html).
-
-## Container Execution
-
-Cloud Foundry runs all workloads in [containers](https://azure.microsoft.com/en-us/overview/what-is-a-container/). Cloud Foundry runs each application instance in its own container instance. Therefore, if you ask Cloud Foundry to run five instances of an application, Cloud Foundry will run 5 container instances. However, Cloud Foundy also supports more complex scenarios.
-
-### Multi-process Applications
-
-Cloud Foundry supports multiple process applications as well. The most common scenario is an application that consists of a front end web interface and back end data service. The front end and back end can be deployed as a single unit and each front end and back end instance will run in its own container. 
-
-### Sidecar Applications
-
-Cloud Foundry also supports running sidecars. A sidecar is an executable that runs _in the same container_ as your application. Logging or auditing agents are a common use case for sidecars. When using this feature, a sidecar is run inside each application instance container.
-
-## Tasks
-
-A task is an app or script whose code is included as part of a deployed app, but runs independently in its own container. Database migration or maintenance scripts are a common use case for tasks.
+Cloud Foundry also supports running Docker images (provided operators enable this feature in your instance). In this case, Cloud Foundry fetches the Docker image from a registry, like Dockerhub, before running instances in containers. The `cf push` command has flags for specifying the details of your registry and image. For more information on deploying Docker applications in Cloud Foundry, refer to the [documentation](https://docs.cloudfoundry.org/devguide/deploy-apps/push-docker.html).
 
 
+## Inbound Traffic
+
+Cloud Foundry applications can serve inbound web traffic over HTTP or HTTPS if desired. Applications that do not serve web traffic are referred to as "worker" applications. Note that applications are not limited to HTTP or HTTPS when connecting out. Provided operators have allowed it, applications can connect out on any number of additional protocols.
 
 
 ## Impact
 
-Developers:
-- Wide range of languages supported. 
-- Docker as a fallback
+Cloud Foundry supports a wide range of languages without putting the responsibility of managing container images on developers. By using buildpacks, developers can focus on application code. If necessary, developers can fall back to docker images for applications. We compare and contrast the use of buildpacks and docker images in more detail in a future section.
 
+Cloud Foundry supports a wide range of workloads, provided they are designed to house state in an external service. In enforcing this, Cloud Foundry can provide significant development and operational capabilities. For example, by insisting that applications are stateless, Cloud Foundry can provide unparalleled performance in application scaling and recovery. In most cases, this approach dramatically simplifies the design of applications with respect to future scalability.
 
-
-More about the impact of buildpacks in the next section
-
-
-Operations:
-Cloud Foundry can efficiently run thousands of app instances by achieving significant application density using containers.
-
-Security
-Workloads are isolated from each other
+We will look at the impact of how Cloud Foundry handles applications as we progress through this course.
