@@ -7,13 +7,15 @@ One of the easiest ways to understand the value of Cloud Foundry is to see it in
 
 In the tutorial, you will:
 
-- Deploy an application to Cloud Foundry
-- Provision a database and make it available to your app
-- Scale the application
-- Observe some of the resiliency of Cloud Foundry by killing an app instance
+- Deploy an application to Cloud Foundry running on Kubernetes
+- Provision a database and make it available to your app using unique credentials
+- Scale the application horizontally by adding instances
+- Observe one of the resiliency features of Cloud Foundry by killing an app instance
+
+The tutorial is hosted on the Katacoda platform and integrated with a live Cloud Foundry instance. Katacoda may require you to register but should not charge a fee. Katacoda is an independent learning platform and is not associated with the Cloud Foundry Foundation.
 
 Head over to Katacoda for a brief introduction to deploying and managing applications on the Cloud Foundry platform:
 
 - [Try Cloud Foundry on Katacoda](https://katacoda.com/cloudfoundry-tutorials/scenarios/trycf)
 
-When you are done, head back here to continue.
+When you are done, head back here to continue. We will discuss the impact of your experience throughout the rest of the course.
