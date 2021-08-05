@@ -1,6 +1,6 @@
 ---
 title: "Application Lifecycle"
-weight: "3"
+weight: "1"
 ---
 
 Applications are not static resources as they will inevitably undergo changes and evolutions over their lifetime. In this chapter, we take a look at what can happen in the lifecycle of an application.
@@ -15,7 +15,7 @@ This means developers focus on writing applications that drive business. Operato
 
 ### Application Configuration
 
-In the next section, we will cover what goes into a containerized application. In addition, a running application needs:
+In a future section, we will cover what goes into a containerized application. In addition, a running application needs:
 
 - **Application Configuration**: This could include credentials to access a database or feature flags used in code.  
 
@@ -65,7 +65,7 @@ It is common practice to scale up or down as load dictates by changing the numbe
 
 ## Health Checks, Resiliency, and Routing
 
-If you completed the Katacoda scenario, you experienced the power of health checks when you killed an app instance. A health check is a monitoring process that continually checks the status of each application instance running in Cloud Foundry.  
+In the Katacoda tutorial, you experienced the power of health checks when you killed an app instance. A health check is a monitoring process that continually checks the status of each application instance running in Cloud Foundry.  
 
 If you deploy an app and ask Cloud Foundry to ensure five instances are running, the platform will maintain the desired state of five instances. If an instance crashes, a new one will be created in its place. The route tables used to route HTTP traffic are automatically updated as the state of application instances changes. Automated route table updates based on application health minimize the risk of an app consumer being routed to a defunct instance.
 

@@ -1,13 +1,13 @@
 ---
-title: "Core Constructs"
-weight: "1"
+title: "Team Constructs"
+weight: "4"
 ---
 
 Cloud Foundry is a multi-tenant platform designed to support multiple teams or customers by separating tenants and workloads. In this section, we take a quick look at the constructs that make this possible.
 
 ## Organizations and Spaces
 
-Organizations (orgs) and spaces are logical separations within a Cloud Foundry instance. Spaces live within orgs, and a single org can contain one or more spaces.
+Organizations (orgs) and spaces are logical separations within a Cloud Foundry instance. Spaces live within orgs, and a single org can contain one or more spaces. Applications, routes, and services are all scoped to a space by default.
 
 Typically orgs separate tenants or projects. So, for example, an org could exist for each project or each tenant. Each org might have separate spaces for different lifecycle stages, like development, staging, and production. Workloads (applications) are always deployed to a space.
 
@@ -15,9 +15,7 @@ Selecting an org and space to work with is called "targeting" and is done with t
 
 ### Environment Parity
 
-You may have heard of [12 Factor App](https://12factor.net) best practices. These best practices were authored by experienced developers and practitioners to address systemic problems in modern application development. They attempt to define a common language to discuss the issues and offer a broad set of conceptual solutions. When evaluating platforms like Cloud Foundry, it is vital to remember 12-factor app principles are recommendations, not requirements. 
-
-The [tenth factor](https://12factor.net/dev-prod-parity) addresses the need for parity between lifecycle stages: "Keep development, staging, and production as similar as possible." Because spaces are logical separations, they share the exact same underlying infrastructure and configuration mechanisms. Parity between a dev and production space is therefore inherent in the platform. This dramatically reduces the likelihood of an issue caused by a difference in the execution environment.
+The [tenth factor](https://12factor.net/dev-prod-parity) of 12-factor app best practices addresses the need for parity between lifecycle stages: "Keep development, staging, and production as similar as possible." Because spaces are logical separations, they share the exact same underlying infrastructure and configuration mechanisms. Parity between a dev and production space is therefore inherent in the platform. This dramatically reduces the likelihood of an issue caused by a difference in the execution environment.
 
 ### Isolation Segments
 
