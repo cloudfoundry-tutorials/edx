@@ -12,7 +12,7 @@ In this section, we look at the capabilities of Cloud Foundry from the perspecti
 
 - **Containerization**: Cloud Foundry runs workloads in containers. The platform supports bringing your containers or, more commonly, simply bringing your applications and allowing the platform to containerize them. In this chapter, we look at these two approaches. 
 
-- **Core Constructs**: Cloud Foundry is a multi-tenant platform designed to support multiple teams or customers with the necessary segregation of tenants. We take a quick look at the constructs that make this possible.
+- **Team Constructs**: Cloud Foundry is a multi-tenant platform designed to support multiple teams or customers with the necessary segregation of tenants. We take a quick look at the constructs that make this possible.
 
 - **Networking**: Cloud Foundry’s routing model provides developers with flexible capabilities to securely and efficiently route traffic to applications. In this chapter, we cover the platform capabilities for managing routes and domains.
 
