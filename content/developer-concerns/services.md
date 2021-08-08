@@ -3,6 +3,8 @@ title: "Services"
 weight: "6"
 ---
 
+# Services
+
 Most applications will need backing services like a database, message queue, and/or identity service. Cloud Foundry makes it easy for a developer to access the services they need or integrate existing services, like an existing database, with apps in the platform.
 
 ## Managed Services

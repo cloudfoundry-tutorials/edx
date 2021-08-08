@@ -4,6 +4,8 @@ weight: 20
 geekdocAlign: left
 ---
 
+# Developer Concerns
+
 In this section, we look at the capabilities of Cloud Foundry from the perspective of a typical developer.
 
 - **Lifecycle Management**: Applications are not static resources as they will inevitably undergo changes and evolutions over their lifetime. In this chapter, we take a look at what can happen in the lifecycle of an application.

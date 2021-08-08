@@ -3,6 +3,8 @@ title: "Visibility"
 weight: "7"
 ---
 
+# Visibility
+
 Developers need to understand what is happening with their applications. Similarly, operators need to understand what is happening in the platform. Cloud Foundry provides visibility into the lifecycle of applications and the platform. This visibility is quite helpful for development, troubleshooting, security, and auditing. 
 
 ## Application Logs

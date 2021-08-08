@@ -1,7 +1,9 @@
 ---
-title: "Workload Basics"
+title: "Workloads"
 weight: "2"
 ---
+
+# Workloads
 
 As we mentioned previously, Cloud Foundry is not a generalized computing platform but rather a platform for running custom applications. It is therefore essential to understand the types of workloads Cloud Foundry is designed to support.
 

@@ -3,6 +3,8 @@ title: "Networking"
 weight: "5"
 ---
 
+# Networking
+
 Cloud Foundry’s software-defined networking model provides developers with flexible capabilities to securely and efficiently route traffic to and from applications without unnecessary complexity. In this chapter, we cover the platform capabilities for managing routes and domains as well as controlling egress from applications.
 
 ## Apps and routes
