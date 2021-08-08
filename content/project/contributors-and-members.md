@@ -1,6 +1,6 @@
 ---
 title: "Contributors and Members"
-weight: "1"
+weight: "2"
 ---
 
 
@@ -14,7 +14,7 @@ For more information about the Foundation itself, the Board of Directors, staff,
 
 ## Contributors
 
-Cloud Foundry is built by a wide array of companies collaborating to make Cloud Foundry the best platform for developers. Over 40 companies have significantly contributed to Cloud Foundry projects. Companies including VMWare, SUSE, SAP, IBM, Dell, and Google are all active contributors with the total number of engaged companies being far larger. The contributor community is growing, and we welcome your involvement.
+Cloud Foundry is built by a wide array of companies collaborating to make Cloud Foundry the best platform for developers. Over 40 companies have significantly contributed to Cloud Foundry projects. Companies including VMWare, SAP, IBM, Dell, and Google are all active contributors with the total number of engaged companies being far larger. The contributor community is growing, and we welcome your involvement.
 
 ### Becoming a Contributor
 
