@@ -42,10 +42,10 @@ The Linux Foundation e-learning course titled [Cloud Foundry for Developers](htt
 
 _By the end of this course, you should be able to:_
 
-- Understand the major capabilities of the Cloud Foundry platform and the value it brings to custom software development teams
-- Understand the security and compliance implications of using a developer focused platform like Cloud Foundry
+- Understand the significant capabilities of the Cloud Foundry platform and the value it brings to custom software development teams
+- Understand the security and compliance implications of using a developer-focused platform like Cloud Foundry
 - Articulate the difference between Cloud Foundry and infrastructure platforms like Kubernetes
-- Understand the open source model that governs the Cloud Foundry project
+- Understand the open-source model that governs the Cloud Foundry project
 
 ### Course Audience
 
