@@ -4,6 +4,8 @@ weight: 10
 geekdocAlign: left
 ---
 
+# Introduction to Cloud Foundry
+
 In this section, we delve into Cloud Foundry's role in technology organizations. First, we cover what Cloud Foundry is, the guiding principles, and the core concerns the platform aims to address. We then discuss the relationship between Cloud Foundry and Kubernetes, highlighting how Cloud Foundry can unlock the complexity of Kubernetes before getting hands-on with the platform.
 
 ## Chapters

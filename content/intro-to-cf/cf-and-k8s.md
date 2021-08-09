@@ -3,6 +3,8 @@ title: "Cloud Foundry and Kubernetes"
 weight: "2"
 ---
 
+# Cloud Foundry and Kubernetes
+
 Cloud Foundry and Kubernetes are both open-source projects with many similarities. However, there are also significant differences.
 
 - **Cloud Foundry** (CF) is an opinionated Platform-as-a-Service that makes it easy to deploy and operate applications. The [Cloud Foundry Foundation](https://cloudfoundry.org) oversees the project.
