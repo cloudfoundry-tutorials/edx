@@ -4,6 +4,8 @@ weight: 50
 geekdocAlign: left
 ---
 
+# About the Project
+
 In this section, we discuss the structure and engagement model of the open source project.
 
 - [The Open Source Model](/project/open-source): Cloud Foundry is a large and diverse ecosystem. The open-core model is used to ensure compatibility and consistency across different Cloud Foundry distributions.
