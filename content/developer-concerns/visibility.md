@@ -7,6 +7,8 @@ weight: "7"
 
 Developers need to understand what is happening with their applications. Similarly, operators need to understand what is happening in the platform. Cloud Foundry provides visibility into the lifecycle of applications and the platform. This visibility is quite helpful for development, troubleshooting, security, and auditing. 
 
+![Loggregator outputs image](images/loggregator-2.png)
+
 ## Application Logs
 
 Cloud Foundry aggregates logs from all app instances into a single stream with no specialized logging libraries required. Developers simply direct logs to standard output and standard error. This does not mean they should abandon log libraries like Log4J, but rather add configuration to ensure logs are sent to standard output and standard error streams.
