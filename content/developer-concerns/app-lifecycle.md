@@ -1,8 +1,3 @@
----
-title: "Application Lifecycle"
-weight: "1"
----
-
 # Application Lifecycle
 
 Applications are not static resources as they will inevitably undergo changes and evolutions over their lifetime. In this chapter, we take a look at what can happen in the lifecycle of an application.

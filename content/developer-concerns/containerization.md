@@ -35,6 +35,8 @@ As a developer, you are responsible for providing your application code to the p
 
 Cloud Foundry removes the responsibility for containerizing applications from developers. Developers can therefore focus on writing code. They do not need to monitor base images and runtime dependencies for updates. When a buildpack or stack (base image) is updated, they can re-containerize their application without downtime using a single command (`cf restage`).
 
+![Node app packaged by buildpack](images/docs-buildpacks-app-image.png)
+
 From an operations, security, and compliance perspective, the contrast in approaches is stark. There is tremendous power and protection in standardizing both base images and runtime dependencies. Consider the following questions:
 - How many versions of Java (or Ruby, Python, etc.) are you running in production? What are they? Where are they running?
 - What operating system kernel and versions are running in production?
