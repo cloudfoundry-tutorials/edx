@@ -7,7 +7,7 @@ Cloud Foundry and Kubernetes are both open-source projects with many similaritie
 
 The difference is in the focus and approach. Constructs and features in Cloud Foundry are centered around applications and developer workflows, while Kubernetes constructs and features are centered around generalized containerized workloads. Both are quite valuable but differ significantly in complexity. By having an opinion, Cloud Foundry can substantially reduce the complexity of deploying and managing applications.
 
-In short, Cloud Foundry is an opinionated application-focused platform, while [Kubernetes is a platform for building platforms](https://twitter.com/kelseyhightower/status/935252923721793536?s=20). 
+In short, Cloud Foundry is an opinionated application-focused platform, while [Kubernetes is a platform for building platforms](https://twitter.com/kelseyhightower/status/935252923721793536?s=20). ![CF with K8s logo](images/eirini-logo.png) 
 
 ## Focus and Approach
 
