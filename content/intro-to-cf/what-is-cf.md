@@ -4,6 +4,8 @@ Cloud Foundry is an application platform designed to bring efficiency, security,
 
 Cloud Foundry is an open-source project, guided by its contributors, governed by a foundation, funded by its members, and community-driven. The project is backed by Google, IBM, Microsoft, VMware, SAP, SUSE, and [more](https://www.cloudfoundry.org/members/).
 
+![Cloud Foundry logo](images/CFF_Logo_rgb.png)
+
 ## The Cloud Foundry Way
 
 _The Cloud Foundry Way_ focuses on cross-team efficiency through well-established cloud-native opinions and extremely high levels of automation. For understanding, it is helpful to ask the question: _"why does your software development organization exist?"_
