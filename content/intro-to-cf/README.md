@@ -4,9 +4,9 @@ In this section, we delve into Cloud Foundry's role in technology organizations.
 
 ## Chapters
 
-- [What is Cloud Foundry?](/intro-to-cf/what-is-cf): Cloud Foundry is an application platform designed to bring efficiency, security, and speed to technology organizations. The core principles of the platform manifest themselves in _"the Cloud Foundry way"_. 
+- [What is Cloud Foundry?](what-is-cf.md): Cloud Foundry is an application platform designed to bring efficiency, security, and speed to technology organizations. The core principles of the platform manifest themselves in _"the Cloud Foundry way"_. 
 
-- [Cloud Foundry & Kubernetes](/intro-to-cf/cf-and-k8s): Cloud Foundry and Kubernetes differ in focus, goals, and complexity. Cloud Foundry on (or with) Kubernetes is the best of both worlds.
+- [Cloud Foundry & Kubernetes](cf-and-k8s.md): Cloud Foundry and Kubernetes differ in focus, goals, and complexity. Cloud Foundry on (or with) Kubernetes is the best of both worlds.
 
-- [Try It](/intro-to-cf/try): One of the easiest ways to understand the value of Cloud Foundry is to see it in action. This immersive, browser-based scenario does not require any software installs, coding, or special skills. Anyone can do it!
+- [Try It](try.md): One of the easiest ways to understand the value of Cloud Foundry is to see it in action. This immersive, browser-based scenario does not require any software installs, coding, or special skills. Anyone can do it!
 
