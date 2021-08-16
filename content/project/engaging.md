@@ -1,8 +1,3 @@
----
-title: "Engaging"
-weight: "3"
----
-
 # Engaging with Cloud Foundry
 
 You don't have to be a contributor or member to be part of the community (though you certainly can be!).  The Cloud Foundry community is a vibrant, worldwide group driven by collaboration, inclusivity, compassion, transparency, and curiosity. We hold a collective vision for an ethical, people-first technology community, and future.

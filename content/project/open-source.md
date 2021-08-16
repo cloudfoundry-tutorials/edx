@@ -1,8 +1,3 @@
----
-title: "Open Source Model"
-weight: "1"
----
-
 # The Open Source Model
 
 Cloud Foundry is a large and complex ecosystem of components and add-on capabilities. This section reviews the model to ensure compatibility across distributions, the variations you are likely to see in the commercial market, and links the source code.
