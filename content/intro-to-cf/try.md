@@ -1,8 +1,3 @@
----
-title: "Try It"
-weight: "3"
----
-
 # Try Cloud Foundry
 
 One of the easiest ways to understand the value of Cloud Foundry is to see it in action. This immersive, browser-based scenario does not require any software installs, coding, or special skills. Anyone can do it!
