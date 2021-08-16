@@ -1,9 +1,3 @@
----
-title: Developer Concerns
-weight: 20
-geekdocAlign: left
----
-
 # Developer Concerns
 
 In this section, we look at the capabilities of Cloud Foundry from the perspective of a typical developer.

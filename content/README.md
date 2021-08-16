@@ -1,11 +1,3 @@
----
-title: Cloud Foundry
-weight: 10
-geekdocNav: true
-geekdocAlign: left
-geekdocAnchor: false
----
-
 # The Modern Application Platform
 
 Deploying and managing applications securely and efficiently is critical in today's technology organizations. As a result, organizations are turning to Kubernetes to run their workloads, only to find massive complexity associated with the platform. Cloud Foundry is the modern model to deliver cloud-native applications to any infrastructure, including Kubernetes. 
@@ -20,4 +12,4 @@ The Linux Foundation e-learning course titled [Cloud Foundry for Developers](htt
 
 While aimed at a technical audience, this course is widely applicable, including to non-technical audiences. It is not necessary to be a developer or operator to complete this course. The hands-on portion does not require any special skills, software installs, or environments. It, like this course, is designed for a broad range of skills and backgrounds. There are no prerequisites beyond a web browser. 
 
-So, welcome! Let's jump right in and start with an [introduction to Cloud Foundry](/intro-to-cf/)!
+So, welcome! Let's jump right in and start with an [introduction to Cloud Foundry](intro-to-cf/)!

@@ -10,7 +10,7 @@ Cloud Foundry and Kubernetes are both open-source projects with many similaritie
 - **Cloud Foundry** (CF) is an opinionated Platform-as-a-Service that makes it easy to deploy and operate applications. The [Cloud Foundry Foundation](https://cloudfoundry.org) oversees the project.
 - **Kubernetes** (k8s) is a generalized infrastructure platform for automating deployment, scaling, and managing containerized workloads. The [Cloud Native Computing Foundation](https://cncf.io) oversees the project.
 
-The difference is in the focus and approach. Constructs and features in Cloud Foundry are centered around applications and developer workflows, while Kubernetes constructs and features are centered around generalized containerized workloads. Both are quite valuable but differ significantly in complexity. By having an opinion, Cloud Foundry can substantially reduce the complexity of deploying and managing applications.
+![CF with K8s logo](/images/eirini-logo.png) The difference is in the focus and approach. Constructs and features in Cloud Foundry are centered around applications and developer workflows, while Kubernetes constructs and features are centered around generalized containerized workloads. Both are quite valuable but differ significantly in complexity. By having an opinion, Cloud Foundry can substantially reduce the complexity of deploying and managing applications.
 
 In short, Cloud Foundry is an opinionated application-focused platform, while [Kubernetes is a platform for building platforms](https://twitter.com/kelseyhightower/status/935252923721793536?s=20). 
 
@@ -43,5 +43,15 @@ In summary, when you expose lower-level platforms and primitives to all develope
 Because Cloud Foundry focuses on the developer experience, it is often the best platform for custom software organizations. However, Cloud Foundry stands to gain from the efficiencies and capabilities of Kubernetes. Furthermore, because Cloud Foundry is not suitable for every workload, organizations need _something else_. For most organizations, this is, or will soon be, Kubernetes. Therefore, it is not a question of "Cloud Foundry or Kubernetes" but rather "Cloud Foundry _and_ Kubernetes." 
 
 The CF community is aligned in the mission to bring the world-class developer experience of Cloud Foundry to Kubernetes. Traditionally, Cloud Foundry has been deployed on virtual machines (VMs) using a tool called [BOSH](https://bosh.io).  Many of the largest Cloud Foundry installations are deployed on virtual machines using BOSH. However, Cloud Foundry can now be easily deployed on Kubernetes, gaining efficiencies in the underlying infrastructure and capitalizing on existing Kubernetes skills.
+
+The following [diagram from EngineerBetter](https://github.com/EngineerBetter/k8s-is-not-a-paas) summarises the out of the box functionality provided by a traditional IaaS, Cloud Foundry deployed to virtual machines with BOSH, Kubernetes, hosted Kubernetes services like Google’s GKE, and Cloud Foundry deployed on top of Kubernetes:
+
+![Cloud Foundry and Kubernetes Concerns Image](/images/iaas-kubes-paas.png)
+
+The diagram shows that:
+
+- Cloud Foundry can compliment Kubernetes by providing a single distribution of additional functionality that is pre-configured to work together
+- Kubernetes can be extended to offer the same functionality as Cloud Foundry
+- Cloud Foundry can still be deployed to virtual machines with BOSH. This is still the most common deployment methodology today, though the focus is on integrating Cloud Foundry and Kubernetes more robustly.
 
 Most developers can work at the Cloud Foundry layer in this model, gaining efficiency, security, and speed. However, developers can fall back to the lower level primitives in Kubernetes as workloads dictate for the use cases outside Cloud Foundry's purview. Over time, more of the Kubernetes primitives will continue to be integrated and encapsulated in the developer-centric approach of Cloud Foundry, allowing ever more workloads to run via Cloud Foundry on Kubernetes.
