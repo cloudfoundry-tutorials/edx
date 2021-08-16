@@ -62,6 +62,8 @@ It is common practice to figure out the required resource allocations of memory 
 
 It is common practice to scale up or down as load dictates by changing the number of deployed instances in production. This is called horizontal scaling and is the process you used in the Katacoda exercise and implements the [eighth factor](https://12factor.net/concurrency) of 12 Factor App best practices related to concurrency: "Scale out via the process model". In addition, the [app autoscaler](https://github.com/cloudfoundry/app-autoscaler) service can be used to automatically scale the number of application instances within a range, based on configured metrics.
 
+![Process scaling image](images/concurrency-process-types.png)
+
 ## Health Checks, Resiliency, and Routing
 
 In the Katacoda tutorial, you experienced the power of health checks when you killed an app instance. A health check is a monitoring process that continually checks the status of each application instance running in Cloud Foundry.  
