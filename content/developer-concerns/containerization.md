@@ -7,6 +7,8 @@ weight: "3"
 
 Cloud Foundry runs workloads (applications and tasks) in containers. The platform supports bringing your container images in the form of Docker or, more commonly, simply bringing your applications and allowing the platform to containerize them. In this chapter, we look at these two approaches. 
 
+![Pushing app or docker image](images/image-as-app.png)
+
 ## What goes into an app container image?
 
 To compare the two approaches, we look at what goes into an app container image:
@@ -35,7 +37,7 @@ As a developer, you are responsible for providing your application code to the p
 
 Cloud Foundry removes the responsibility for containerizing applications from developers. Developers can therefore focus on writing code. They do not need to monitor base images and runtime dependencies for updates. When a buildpack or stack (base image) is updated, they can re-containerize their application without downtime using a single command (`cf restage`).
 
-![Node app packaged by buildpack](images/docs-buildpacks-app-image.png)
+![Containerization separation of concerns](images/separation-concerns.png)
 
 From an operations, security, and compliance perspective, the contrast in approaches is stark. There is tremendous power and protection in standardizing both base images and runtime dependencies. Consider the following questions:
 - How many versions of Java (or Ruby, Python, etc.) are you running in production? What are they? Where are they running?
