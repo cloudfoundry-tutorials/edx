@@ -11,17 +11,19 @@ Cloud Foundry is a multi-tenant platform designed to support multiple teams or c
 
 Organizations (orgs) and spaces are logical separations within a Cloud Foundry instance. Spaces live within orgs, and a single org can contain one or more spaces. Applications, routes, and services are all scoped to a space by default.
 
-![Mapping organizations image](/images/mapping_organizations.png)
+![Mapping organizations image](images/mapping_organizations.png)
 
 Typically orgs separate tenants or projects. So, for example, an org could exist for each project or each tenant. Each org might have separate spaces for different lifecycle stages, like development, staging, and production. Workloads (applications) are always deployed to a space.
 
-![Mapping spaces image](/images/mapping_spaces.png)
+![Mapping spaces image](images/mapping_spaces.png)
 
 Selecting an org and space to work with is called "targeting" and is done with the `cf target` command. In the Katacoda tutorial, the user provisioned for you only had access to one org and space. Therefore, the target org and space were automatically set.
 
 ### Environment Parity
 
 The [tenth factor](https://12factor.net/dev-prod-parity) of 12-factor app best practices addresses the need for parity between lifecycle stages: "Keep development, staging, and production as similar as possible." Because spaces are logical separations, they share the exact same underlying infrastructure and configuration mechanisms. Parity between a dev and production space is therefore inherent in the platform. This dramatically reduces the likelihood of an issue caused by a difference in the execution environment.
+
+![Environment parity image](images/environment-parity.png)
 
 ### Isolation Segments
 
