@@ -21,7 +21,11 @@ Cloud Foundry allows developers to simply bring application code to the platform
 
 ### Application Code
 
-When you bring your application code to Cloud Foundry, the platform will generate a container image for the application before executing instances in containers. Buildpacks are used to generate container images. We will discuss this process more in the next section. For now, it suffices to understand that Cloud Foundry can support languages for which a buildpack exists. This includes, but is not limited to, the following:
+When you bring your application code to Cloud Foundry, the platform will generate a container image for the application before executing instances in containers. Buildpacks are used to generate container images. We will discuss this process more in the next section. For now, it suffices to understand that Cloud Foundry can support languages for which a buildpack exists. 
+
+![Staging process image](images/staging-process.png)
+
+This includes, but is not limited to, the following:
 
 - Compiled Binaries
 - Go
