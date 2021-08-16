@@ -6,6 +6,8 @@ Applications are not static resources as they will inevitably undergo changes an
 
 An application's life in Cloud Foundry begins upon deployment. Deploying an application is called a 'push'. A `cf push` is highly automated, encapsulating a holistic process of uploading, containerizing, configuring, and scheduling application instances. For this reason, `cf push` has become the gold standard for application deployment. 
 
+![CF push image](images/run-your-app-isometric.png)
+
 You experienced some of the power of `cf push` in the Katacoda tutorial. With one simple command and a manifest file, you were able to containerize your application, run it, and start serving web traffic once the application became available. Quite a few steps go into this process, including reserving and mapping routable hostnames, allocating compute and storage resources for your containers, caching container images, and container scheduling. All of this complexity (and much more) is hidden behind the very simple `cf push` command.
 
 This means developers focus on writing applications that drive business. Operators focus on high-value tasks like providing new services and capabilities and capacity planning. And security and compliance teams rest easy knowing that runtimes are standardized and easy to update.
