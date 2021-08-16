@@ -1,13 +1,6 @@
----
-title: "Containerization"
-weight: "3"
----
-
 # Containerization 
 
 Cloud Foundry runs workloads (applications and tasks) in containers. The platform supports bringing your container images in the form of Docker or, more commonly, simply bringing your applications and allowing the platform to containerize them. In this chapter, we look at these two approaches. 
-
-![Pushing app or docker image](images/image-as-app.png)
 
 ## What goes into an app container image?
 
