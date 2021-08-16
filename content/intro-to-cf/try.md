@@ -11,7 +11,7 @@ In the tutorial, you will use the Cloud Foundry command line interace (CLI) to:
 
 The CLI is used to interact with Cloud Foundry instances. We will reference CLI commands throughout this course as examples on how to complete specific tasks. However, we will not be covering the CLI specifically in this course as this is covered in the Cloud Foundry for Developers course and this course focuses on the "why" of Cloud Foundry.
 
-![Katacoda tutorial screenshot](/images/katacoda-tutorial.png)
+![Katacoda tutorial screenshot](images/katacoda-tutorial.png)
 
 The tutorial is hosted on the Katacoda platform and integrated with a live Cloud Foundry instance. Katacoda may require you to register but should not charge a fee. Katacoda is an independent learning platform and is not associated with the Cloud Foundry Foundation.
 
