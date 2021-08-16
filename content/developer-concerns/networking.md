@@ -1,8 +1,3 @@
----
-title: "Networking"
-weight: "5"
----
-
 # Networking
 
 Cloud Foundry’s software-defined networking model provides developers with flexible capabilities to securely and efficiently route traffic to and from applications without unnecessary complexity. In this chapter, we cover the platform capabilities for managing routes and domains as well as controlling egress from applications.
@@ -14,6 +9,8 @@ In Cloud Foundry, a route maps HTTP(S) traffic to one or more applications. Apps
 The commands to manage routes are comprehensive and straightforward. There is no need for developers to manipulate DNS or load balancers as Cloud Foundry routers maintain route tables with up-to-date information. Developers can create routes with `cf create-route` and associate them to an application using `cf map-route`. Routes can also be removed from an application using `cf unmap-route` or deleted using `cf delete-route`.  Routes and route mappings can also be specified in an application manifest.
 
 Route manipulation can be used for A/B testing, route-based branding, or complex application updates where the rolling strategy will not suffice. 
+
+![Traffic routing image](images/routing.png)
 
 ### External domains
 
