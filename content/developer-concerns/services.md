@@ -31,6 +31,8 @@ Generating unique credentials and providing them to your application is equally 
 
 Applications are provided credentials through environment variables. This is an implementation of another 12-factor app best practice: [III. Config](https://12factor.net/config) "Store config in the environment". This best practice ensures the application is decoupled from the service configuration. Let's look at an example of why this is important.
 
+![Managed Services Image](/images/managed-services.png)
+
 Assume we have an application that uses a database. Suppose we have a development space and separate production space. In that case, we can have a service instance in each (a dev database in the development space and a production database in the production space). These service instances can have the same name since they will be scoped to their respective spaces. The same binding can be represented in the manifest and used to deploy to both spaces. In this way, Cloud Foundry has eliminated the possibility of a misconfigured database credential causing a production issue.
 
 Should a developer need to connect to a service instance, say to inspect a database, Cloud Foundry allows them to provision a unique set of credentials solely for this purpose. This is achieved using `cf create-service-key`. This is an important capability to leverage to ensure a clear audit trail that differentiates actions by an application from those by a developer.
@@ -38,6 +40,8 @@ Should a developer need to connect to a service instance, say to inspect a datab
 ### The Open Service Broker API
 
 Managed services integrate with Cloud Foundry through an API called the [Open Service Broker API](https://www.openservicebrokerapi.org/) (OSBAPI). The OSBAPI is an industry-standard API supported by many cloud platforms and Kubernetes. Provisioning, deprovisioning, and credential management are implemented in a service broker. Each broker advertises a catalog of one or more services, each with a tiered offering called a 'plan'. Platform operators control the available services and plans for each organization.
+
+![OSBAPI Image](/images/osbapi-graphic.jpeg)
 
 By standardizing on the OSBAPI, Cloud Foundry can make available any service offering with a broker. Developers only need to know a few simple commands:
 
