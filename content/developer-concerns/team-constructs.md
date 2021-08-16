@@ -1,8 +1,3 @@
----
-title: "Team Constructs"
-weight: "4"
----
-
 # Team Constructs
 
 Cloud Foundry is a multi-tenant platform designed to support multiple teams or customers by separating tenants and workloads. In this section, we take a quick look at the constructs that make this possible.
