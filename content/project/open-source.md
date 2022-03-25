@@ -6,7 +6,7 @@ Cloud Foundry is a large and complex ecosystem of components and add-on capabili
 
 In large, open-source projects, it is challenging to prevent divergence, particularly when very large commercial vendors are involved. Each wants to ensure the features they need are prominent and prioritized. Compatibility between distributions becomes a challenge for the end-user community. To prevent these types of issues, Cloud Foundry follows an open-core model whereby core components must be supported in order to use the name "Cloud Foundry". The open-core model helps to ensure a basic level of interoperability between all Cloud Foundry distributions.
 
-The two most crucial open core elements in Cloud Foundry are the [command line interface (CLI)](https://docs.cloudfoundry.org/cf-cli/) and the [Cloud Foundry API (CAPI)](https://v3-apidocs.cloudfoundry.org/version/3.102.0/index.html). 
+The two most crucial open core elements in Cloud Foundry are the [command line interface (CLI)](https://docs.cloudfoundry.org/cf-cli/) and the [Cloud Foundry API (CAPI)](https://v3-apidocs.cloudfoundry.org/). 
 
 The CLI is the tool used to interact with any Cloud Foundry instance. Therefore, the CLI must be supported unchanged. However, providers may decide to disable certain features. The disabling of features is perfectly acceptable, provided the existing commands remain unmodified.
 
