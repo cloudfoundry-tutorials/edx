@@ -22,4 +22,4 @@ For sizeable or complex contributions, it is always best to communicate with the
 
 Membership makes it possible for the Foundation to remain an agnostic voice in a competitive cloud market. It equips the Foundation with the means to bring events, training, and certification to the broader Cloud Foundry ecosystem and to heighten awareness and adoption of the various projects. Member companies encompass those using, selling, and creating the technologies and ecosystems related to Cloud Foundry.
 
-Member companies include Dell, IBM, SAP, SUSE, and VMWare, along with thirty others. For more information on our members and becoming a member, see: [https://www.cloudfoundry.org/members/](https://www.cloudfoundry.org/members/).
+For more information on our members and becoming a member, see: [https://www.cloudfoundry.org/members/](https://www.cloudfoundry.org/members/).
