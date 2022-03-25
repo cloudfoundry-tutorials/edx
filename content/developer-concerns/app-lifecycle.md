@@ -60,7 +60,7 @@ In Cloud Foundry, it is easy to scale applications up and down as load variation
 
 It is common practice to figure out the required resource allocations of memory and disk for an application container during development. This is called vertical scaling. The allocation of memory and disk applies to each container running an application instance, not directly to the application runtime. 
 
-It is common practice to scale up or down as load dictates by changing the number of deployed instances in production. This is called horizontal scaling and is the process you used in the Katacoda exercise and implements the [eighth factor](https://12factor.net/concurrency) of 12 Factor App best practices related to concurrency: "Scale out via the process model". In addition, the [app autoscaler](https://github.com/cloudfoundry/app-autoscaler) service can be used to automatically scale the number of application instances within a range, based on configured metrics.
+It is common practice to scale up or down as load dictates by changing the number of deployed instances in production. This is called horizontal scaling and is the process you used in the Katacoda exercise and implements the [eighth factor](https://12factor.net/concurrency) of 12 Factor App best practices related to concurrency: "Scale out via the process model". 
 
 ![Process scaling image](images/concurrency-process-types.png)
 
