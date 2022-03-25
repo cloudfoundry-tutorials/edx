@@ -15,7 +15,7 @@ While this course is aimed at the "why" of Cloud Foundry, the Linux Foundation o
 
 You can install Cloud Foundry yourself on Kubernetes (local or hosted):
 
-- [cf-for-k8s](https://github.com/cloudfoundry/cf-for-k8s)
+- [cf-k8s-controllers](https://github.com/cloudfoundry/cf-k8s-controllers)
 
 ## Get Engaged with Cloud Foundry
 
