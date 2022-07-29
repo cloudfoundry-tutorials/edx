@@ -14,7 +14,7 @@ Route manipulation can be used for A/B testing, route-based branding, or complex
 
 ### External domains
 
-External domains are routable from outside of Cloud Foundry. Operators manage the DNS mappings for these domains. A Cloud Foundry instance can have many external domains available for use. However, all Cloud Foundry instances have a default application domain that will be used if no other domain is specified. The default app domain used in the Katacoda scenario is an example of such a domain. Apps accessible from outside of Cloud Foundry are assigned to routes using one or more external domains.
+External domains are routable from outside of Cloud Foundry. Operators manage the DNS mappings for these domains. A Cloud Foundry instance can have many external domains available for use. However, all Cloud Foundry instances have a default application domain that will be used if no other domain is specified. The default app domain used in the Killercoda scenario is an example of such a domain. Apps accessible from outside of Cloud Foundry are assigned to routes using one or more external domains.
 
 It is trivially easy to add custom domains to a Cloud Foundry instance. Domains are made available at the org level. While the process of adding a domain to Cloud Foundry is easy, it does require the configuration of certificates for that domain. Most Cloud Foundry providers have incorporated custom certificate management services in the marketplace to streamline this process.
 

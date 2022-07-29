@@ -12,7 +12,7 @@ Typically orgs separate tenants or projects. So, for example, an org could exist
 
 ![Mapping spaces image](images/mapping_spaces.png)
 
-Selecting an org and space to work with is called "targeting" and is done with the `cf target` command. In the Katacoda tutorial, the user provisioned for you only had access to one org and space. Therefore, the target org and space were automatically set.
+Selecting an org and space to work with is called "targeting" and is done with the `cf target` command. In the Killercoda tutorial, the user provisioned for you only had access to one org and space. Therefore, the target org and space were automatically set.
 
 ### Environment Parity
 

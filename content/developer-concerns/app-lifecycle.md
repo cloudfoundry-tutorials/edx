@@ -8,7 +8,7 @@ An application's life in Cloud Foundry begins upon deployment. Deploying an appl
 
 ![CF push image](images/run-your-app-isometric.png)
 
-You experienced some of the power of `cf push` in the Katacoda tutorial. With one simple command and a manifest file, you were able to containerize your application, run it, and start serving web traffic once the application became available. Quite a few steps go into this process, including reserving and mapping routable hostnames, allocating compute and storage resources for your containers, caching container images, and container scheduling. All of this complexity (and much more) is hidden behind the very simple `cf push` command.
+You experienced some of the power of `cf push` in the Killercoda tutorial. With one simple command and a manifest file, you were able to containerize your application, run it, and start serving web traffic once the application became available. Quite a few steps go into this process, including reserving and mapping routable hostnames, allocating compute and storage resources for your containers, caching container images, and container scheduling. All of this complexity (and much more) is hidden behind the very simple `cf push` command.
 
 This means developers focus on writing applications that drive business. Operators focus on high-value tasks like providing new services and capabilities and capacity planning. And security and compliance teams rest easy knowing that runtimes are standardized and easy to update.
 
@@ -60,13 +60,13 @@ In Cloud Foundry, it is easy to scale applications up and down as load variation
 
 It is common practice to figure out the required resource allocations of memory and disk for an application container during development. This is called vertical scaling. The allocation of memory and disk applies to each container running an application instance, not directly to the application runtime. 
 
-It is common practice to scale up or down as load dictates by changing the number of deployed instances in production. This is called horizontal scaling and is the process you used in the Katacoda exercise and implements the [eighth factor](https://12factor.net/concurrency) of 12 Factor App best practices related to concurrency: "Scale out via the process model". 
+It is common practice to scale up or down as load dictates by changing the number of deployed instances in production. This is called horizontal scaling and is the process you used in the Killercoda exercise and implements the [eighth factor](https://12factor.net/concurrency) of 12 Factor App best practices related to concurrency: "Scale out via the process model". 
 
 ![Process scaling image](images/concurrency-process-types.png)
 
 ## Health Checks, Resiliency, and Routing
 
-In the Katacoda tutorial, you experienced the power of health checks when you killed an app instance. A health check is a monitoring process that continually checks the status of each application instance running in Cloud Foundry.  
+In the Killercoda tutorial, you experienced the power of health checks when you killed an app instance. A health check is a monitoring process that continually checks the status of each application instance running in Cloud Foundry.  
 
 If you deploy an app and ask Cloud Foundry to ensure five instances are running, the platform will maintain the desired state of five instances. If an instance crashes, a new one will be created in its place. The route tables used to route HTTP traffic are automatically updated as the state of application instances changes. Automated route table updates based on application health minimize the risk of an app consumer being routed to a defunct instance.
 

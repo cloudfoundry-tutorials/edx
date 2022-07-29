@@ -46,7 +46,7 @@ To highlight the power of the Cloud Foundry approach, let's look at an example: 
 
 ## Container Execution
 
-As we have stated, Cloud Foundry runs all workloads in [containers](https://azure.microsoft.com/en-us/overview/what-is-a-container/). In addition, cloud Foundry runs each application instance in its own container instance. Therefore, if you ask Cloud Foundry to run five instances of an application, Cloud Foundry will run 5 container instances. You saw this in the scaling portion of the Katacoda tutorial.
+As we have stated, Cloud Foundry runs all workloads in [containers](https://azure.microsoft.com/en-us/overview/what-is-a-container/). In addition, cloud Foundry runs each application instance in its own container instance. Therefore, if you ask Cloud Foundry to run five instances of an application, Cloud Foundry will run 5 container instances. You saw this in the scaling portion of the Killercoda tutorial.
 
 Depending on the type of Cloud Foundry deployment you are using, these containers may be run in Kubernetes or in Cloud Foundry's container execution engine called Diego. Either way, the developer experience is the same.
 

@@ -8,7 +8,7 @@ Managed services allow Cloud Foundry users to provision instances of databases, 
 
 ### The Marketplace
 
-The 'marketplace' lists available services and is where developers can see services they can provision on-demand. You saw this in the Katacoda tutorial when you ran `cf marketplace` or `cf m`. The marketplace is established by Cloud Foundry operators and, therefore will vary depending on what instance of Cloud Foundry you are using. For example, in the Katacoda tutorial, the Cloud Foundry instance only contained a single service offering.
+The 'marketplace' lists available services and is where developers can see services they can provision on-demand. You saw this in the Killercoda tutorial when you ran `cf marketplace` or `cf m`. The marketplace is established by Cloud Foundry operators and, therefore will vary depending on what instance of Cloud Foundry you are using. For example, in the Killercoda tutorial, the Cloud Foundry instance only contained a single service offering.
 
 In the marketplace, developers will see the list of services available broken down into tiered offerings called plans. A plan is a specific offering that can be instantiated. Plans enable different configurations or levels of service to be offered. For example, a database service may contain a plan that creates a single database instance in a shared cluster, a plan to provide a dedicated database instance, and a plan to provide a highly available database cluster. Operators can configure chargeback models for these plans.
 
@@ -18,7 +18,7 @@ Cloud Foundry operators control what plans are available in each organization. T
 
 Creating (provisioning) a new service instance is simple and easy using the `cf create-service` command. Developers simply need to select the plan they want to create and provide any required configuration parameters. They do not need to know how to install, provision, or manage the service they are creating. From the most simple services to the most complex, developers only need to know `cf create-service`.
 
-Of course, deprovisioning or deleting a service instance is also simple, as you saw in the Katacoda tutorial. This is achieved with the `cf delete-service` command.
+Of course, deprovisioning or deleting a service instance is also simple, as you saw in the Killercoda tutorial. This is achieved with the `cf delete-service` command.
 
 ### Service Credentials
 
